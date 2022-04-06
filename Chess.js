@@ -40,7 +40,10 @@ function horde() {
     alert("Now you play horde");
     starter = "rnbqkbnrpppppppp111111111PP11PP1PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP"
     showFigures(starter);
-    document.getElementById("FEN", "ok")
+    document.getElementById('notation').innerHTML = "Notation";
+    document.getElementById('pgn').innerHTML = "";
+    document.getElementById('opening').innerHTML = "";
+    document.getElementById('FEN').innerHTML = "rnbqkbnr/pppppppp/8/1PP2PP1/PPPPPPPP/PPPPPPPP/PPPPPPPP/PPPPPPPP";
 }
 $(function (){
     start();
@@ -277,7 +280,7 @@ function moveFigure(frCoord, toCoord){
     "The Dutch Defence has a character all of its own. Black usually plays either for a Classical setup with 2... e6 3... d6 4... Be7, a Stonewall with 2... e6 3... d5 4... c6, or for the Leningrad with 2... g6 3... Bg7 4... d6. White usually plays 2. c4 here, though many moves are playable. One interesting, though often considered dubious, option is to play the Staunton Gambit with 2. e4 leading to more tactical positions rather than the positional grinds and straightforward attacks the Dutch usually provides. This grabs the e4-square without copying moves. Read more on <a href = 'https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._d4/1...f5', target='_blank'>Wikipedia</a>",
     "1. e4 - King's Pawn Opening White's assertive opening move opens lines for the queen and king's bishop and fights for control of the squares d5 and f5. This move is popular at all levels of the game and was the favorite opening move of world champion Bobby Fischer who called it 'best by test'. Openings with 1. e4 are traditionally considered more sharp and attacking than those with 1. d4, but this is an extreme generalization and both players will have many more opportunities to influence the type of position that appears. With a pawn on e4, White's simplest plan is to play d4 on the next move, creating a strong 'classical' center.Black's responsesIt's useful to think of Black's responses to 1. e4 as motivated by one of the following counterplans:Establish a pawn on e5, securing a share of the centre for Black.Establish a pawn on d5, securing a share of the centre for Black.Attack White's e-pawn immediately. Read more on <a href = 'https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._e4', target='_blank'>Wikipedia</a>",
     "This is not a very common move because it somewhat weakens the e1-h4 diagonal; its aim is to over-protect the e5 square which later can be occupied by a White Knight. It could also prepare a kingside attack. Black sometimes attempts to stop this plan as early as move one, by responding with e5, the From Gambit. Read more on <a href = 'https://en.wikibooks.org/wiki/Chess_Opening_Theory/1._f4', target='_blank'>Wikipedia</a>",
-"", "", "", "", "", ""]
+"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "","", "", "", "", "", ""]
     videos = ["", "", "", "", ""]
     if (II_white != true){
         document.getElementById('notation').innerHTML = full_info;
@@ -406,7 +409,9 @@ function getMovePlace(toCoord){
 
 function isOpening(forOpenning){
     var node = ["1. c4 ", "1. d4 ", "1. d4 Nf6 ", "1. d4 Nf6 2. Nf3 e6 3. Bg5 ", "1. d4 f5 ", "1. e4 ", "1. f4 ", "1. g4 ", "1. h4 ", "1. a4 ", "1. b4 ", "1. a3 ", "1. b3 ", "1. c3 ", "1. d3 ", "1. e3 ", "1. f3 ", "1. g3 ", "1. h3 ", "1. Na3 ", "1. Nc3 ", "1. Nf3 ", "1. Nh3 "];
-    var ECO = ["A10	English Opening", "A40	Queen's Pawn Game", "A45 Indian Defense", "A46	Torre Attack", "A80	Dutch Defense", "B00 King's Pawn", "A02 Bird Opening"];
+    var ECO = ["A10	English Opening", "A40	Queen's Pawn Game", "A45 Indian Defense", "A46	Torre Attack", "A80	Dutch Defense", "B00 King's Pawn", "A02 Bird Opening", "A00 Grob Opening", "A00 Kádas Opening",
+"A00 Ware Opening", "A00 Polish Opening", "A00 Anderssen's Opening", "A01 Nimzo-Larsen Attack", "A00 Saragossa Opening", "A00 Mieses Opening", "A00 Van't Kruijs Opening", "A00 Gedult's Opening", "A00 Hungarian Opening", "A00 Clemenz Opening",
+"A00 Sodium Attack", "A00 Van Geet Opening", "A04 Zukertort Opening", "A00 Amar Opening"];
     console.log(forOpenning)
     if (II_white == false){
         document.getElementById('pgn').innerHTML = forOpenning;
