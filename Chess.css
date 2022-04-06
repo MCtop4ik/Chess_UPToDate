@@ -1,0 +1,274 @@
+.board {
+    width: 560px;
+    height: 560px;
+    border: 40px solid;
+}
+.square {
+    width: 70px;
+    height: 70px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.black {
+    background-color: #666;
+}
+.white {
+    background-color: #eee;
+}
+#a {
+	position: absolute;
+	left: 70px;
+	top: 605px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#b {
+	position: absolute;
+	left: 140px;
+	top: 605px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#c {
+	position: absolute;
+	left: 210px;
+	top: 605px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#d {
+	position: absolute;
+	left: 280px;
+	top: 605px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#e {
+	position: absolute;
+	left: 350px;
+	top: 605px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#f {
+	position: absolute;
+	left: 420px;
+	top: 605px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#g {
+	position: absolute;
+	left: 490px;
+	top: 605px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#h {
+	position: absolute;
+	left: 560px;
+	top: 605px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#i {
+	position: absolute;
+	left: 620px;
+	top: 555px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#j {
+	position: absolute;
+	left: 620px;
+	top: 485px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#k {
+	position: absolute;
+	left: 620px;
+	top: 415px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#l {
+	position: absolute;
+	left: 620px;
+	top: 345px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#m {
+	position: absolute;
+	left: 620px;
+	top: 275px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#n {
+	position: absolute;
+	left: 620px;
+	top: 205px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#o {
+	position: absolute;
+	left: 620px;
+	top: 135px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#p {
+	position: absolute;
+	left: 620px;
+	top: 65px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#q {
+	position: absolute;
+	left: 20px;
+	top: 555px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#r {
+	position: absolute;
+	left: 20px;
+	top: 485px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#s {
+	position: absolute;
+	left: 20px;
+	top: 415px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#t {
+	position: absolute;
+	left: 20px;
+	top: 345px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#u {
+	position: absolute;
+	left: 20px;
+	top: 275px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#v {
+	position: absolute;
+	left: 20px;
+	top: 205px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#w {
+	position: absolute;
+	left: 20px;
+	top: 135px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#x {
+	position: absolute;
+	left: 20px;
+	top: 65px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+.figure {
+    font-size: 60px;
+    cursor: grab;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.FEN {
+    position: absolute;
+    top: 154px;  
+    left: 683px;
+    color: #333; font-family: 'Rouge Script', cursive; font-size: 16px; font-weight: normal; line-height: 32px; margin: 0 0 50px; text-shadow: 1px 1px 2px #082b34; 
+
+}
+
+.info {
+    position: absolute;
+    top: 700px;
+    left: 69px;
+    color: #003153; font-family: 'Rouge Script', cursive; font-size: 24px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34; 
+}
+
+.FEN_label {
+    position: absolute;
+    top: 93px;
+    left: 683px;
+    color: #CEF0D4; font-family: 'Rouge Script', cursive; font-size: 70px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34; 
+}
+
+.notation {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    font-size: 30px;
+    color: #333; font-family: 'Rouge Script', cursive; font-size: 32px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-shadow: 1px 1px 2px #082b34; 
+    border: 2px solid;
+}
+
+.opening {
+    position: absolute;
+    top: 192px;
+    left: 683px;
+    font-size: 30px;
+    color: #d04764; font-family: 'Lobster', cursive; font-size: 36px; font-weight: normal; line-height: 48px; margin: 0 0 18px; text-shadow: 1px 0 0 #fff; 
+}
+
+.pgn {
+    position: absolute;
+    top: 54px;
+    left: 683px;
+    font-size: 16px;
+    color: #00fa9a; font-family: 'Rouge Script', cursive; font-size: 16px; font-weight: normal; line-height: 18px; margin: 0 0 18px; text-shadow: 1px 0 0 #fff; 
+}
+
+.pgn_label {
+    position: absolute;
+    top: 8px;
+    left: 683px;
+    color: #007fff; font-family: 'Lobster', cursive; font-size: 24px; font-weight: normal; line-height: 48px; margin: 0 0 50px; text-align: center; text-shadow: 1px 1px 2px #082b34; 
+}
+
+#aa {
+	position: absolute;
+	left: 70px;
+	top: 8px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#bb{
+	position: absolute;
+	left: 140px;
+	top: 8px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#cc {
+	position: absolute;
+	left: 210px;
+	top: 8px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#dd {
+	position: absolute;
+	left: 280px;
+	top: 8px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#ee {
+	position: absolute;
+	left: 350px;
+	top: 8px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#ff {
+	position: absolute;
+	left: 420px;
+	top: 8px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#gg {
+	position: absolute;
+	left: 490px;
+	top: 8px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
+#hh {
+	position: absolute;
+	left: 560px;
+	top: 8px;
+	color: #fff; font-family: 'Rouge Script', cursive;font-size: 30px;
+}
